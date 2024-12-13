@@ -1,8 +1,45 @@
-/* google font  */
+/* google font  roboto se liye hai*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* root color  */
 :root{
     --blue: #0188df;
-    
+    --black: #444d53;
+    --wight:#fff;
 }
+/* custom css  */
+*{
+    font-family: "Roboto", serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    transition: all linear .2s;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+
+}
+
+/* header navbar section start  */
+header{
+width: 96%;
+background: var(--wight);
+position: fixed;
+top: 2rem;
+left: 50%;
+transform: translate(-50%);
+display: flax;
+align-items: center;
+}
+
+
+
+
+
+
+/* header navbar section end  */
