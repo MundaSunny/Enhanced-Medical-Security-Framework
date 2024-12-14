@@ -22,8 +22,33 @@
 html{
     font-size: 62.5%;
     overflow: hidden;
-
 }
+
+/* button  */
+.button{
+    height: 3.5rem;
+    width: 15rem;
+    background: var(--blue);
+    color: var(--wight);
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    border: .1rem solid var(--blue);
+}
+
+.button:hover{
+    border: 1rem solid var(--wight);
+    background: var(--wight);
+    color: var(--blue);
+    letter-spacing: 2rem;
+}
+
+
+
+
+
 
 /* header navbar section start  */
 header{
@@ -35,11 +60,161 @@ left: 50%;
 transform: translate(-50%);
 display: flax;
 align-items: center;
+justify-content: space-between;
+padding: 1rem 2rem;
+z-index: 1000;
+}
+
+/* logo name  */
+header a{
+    color: var(--black);
+}
+header a:hover{
+    color: var(--blue);
+}
+header .logo{
+    font-size: 3rem;
+}
+header .logo span{
+    color: var(--blue);
+}
+
+/* navbar link  */
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+list-style: none;
+
+}
+
+header .navbar ul li{
+    margin: 0 1rem; 
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: var(--black);
+
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+    display: none;
+}
+
+
+header .fa-times{
+    transform: rotate(180deg);
+}
+
+.header-active{
+    top: 0;
+    width: 100%;
+    box-shadow: .1rem .3rem rgba(0,0,0,3);
+}
+
+
+/* header navbar section end  */
+
+/* home section start  */
+
+.home{
+    min-height: 100vh;
+    padding-top: 10rem;
+    
+}
+
+.home .row{
+    display:flex;
+align-items: center;
+justify-content: space-around;
+width: 85%;
+margin: 0 auto;
+}
+ /* home image  */
+
+.home .row .images img{
+     height:75vh;
+
+}
+
+/* home heading  */
+.home .content h1{
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.home .content h1 span{
+    color: var(--blue);
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: var(--black);
 }
 
 
 
 
+/* home section end  */
 
 
-/* header navbar section end  */
+/* media query */
+
+@media (max-width:1440px){
+
+    html{
+        font-size: 55%;
+    }
+    
+header .fa-bars{
+    display: block;
+}
+
+header .navbar{
+    position: fixed;
+    top: -100rem;
+    left: 0;
+width: 100%;
+background: var(--wight); 
+ opacity: 0; 
+}
+
+header .navbar ul{
+    flex-flow: column;
+    padding: 2rem 0;
+}
+
+header .navbar ul li{
+    margin: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+header .navbar ul li a{
+    font-size: 3rem;
+    display: block;
+}
+header.nav-toggle{
+    top:5.5rem;
+    opacity: 1;   
+}
+
+
+/* home media query  */
+
+.home .row{
+    flex-flow: column;
+}
+.home .row .content{
+    text-align: center;
+}
+
+.home .row .images img{
+    width: 100%;
+}
+
+}
+
