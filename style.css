@@ -45,10 +45,27 @@ html{
     letter-spacing: 2rem;
 }
 
+/* heading */
+.heading{
+    text-align: center;
+    font-size: 4rem;
+padding: 1rem;
+padding-top: 8rem;
+color: var(--blue);
+letter-spacing: .1rem;
+
+}
+/* title  */
+.title{
 
 
+text-align: center;
+padding: 0rem 1rem;
+font-size: 2.5rem;
+color: var(--black);
+font-weight: 300;
 
-
+}
 
 /* header navbar section start  */
 header{
@@ -116,7 +133,6 @@ header .fa-times{
     box-shadow: .1rem .3rem rgba(0,0,0,3);
 }
 
-
 /* header navbar section end  */
 
 /* home section start  */
@@ -155,10 +171,73 @@ margin: 0 auto;
     color: var(--black);
 }
 
-
-
-
 /* home section end  */
+
+/* about section start  */
+
+.about{
+background: #f9f9f9;
+
+}
+
+ .about .box-container{
+padding: 4rem;
+}
+
+
+.about .box-container .box{
+    width: 75%;
+margin: 4rem auto;
+border-radius: .5rem;
+box-shadow: 0 .3rem .5rem rgba(0, 0,0,.3);
+display: flex;
+align-items: center;
+overflow: hidden;
+background: var(--wight);
+}
+
+
+/* about images  */
+.about .box-container .box .images{
+    height: 40rem;
+width: 50%;
+
+}
+
+.about .box-container .box .images img{
+    height: 100%;
+width: 100%;
+
+}
+
+/* about heading & text  */
+.about .box-container .box .content{
+    height: 100%;
+width: 50%;
+padding: 2rem;
+}
+
+.about .box-container .box .content h3{
+    font-size: 3rem;
+    color: var(--blue);
+    display: flex;
+    align-items: start;
+}
+.about .box-container .box .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+    text-align: start;
+}
+
+.about .box-container .box:nth-child(even){
+    flex-flow: row-reverse;
+
+}
+/* about section end  */
+
+
+
 
 
 /* media query */
@@ -211,8 +290,25 @@ header.nav-toggle{
 .home .row .content{
     text-align: center;
 }
-
+ /* home images  */
 .home .row .images img{
+    width: 100%;
+}
+
+/* about media query  */
+
+.about .box-container .box{
+    flex-flow: column;
+    width: 90%;
+}
+.about .box-container .box:nth-child(even){
+    flex-flow: column;
+}
+.about .box-container .box .images{
+    width: 100%;
+}
+
+.about .box-container .box .content{
     width: 100%;
 }
 
